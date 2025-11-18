@@ -29,7 +29,7 @@ Project_Folder/
 ├── requirements.txt        # Required Python dependencies
 └── README.md               # Project documentation
 
-🚀 How to Run the Application
+## 🚀 How to Run the Application
 
 Follow the steps below to run the helmet detection web application.
 
