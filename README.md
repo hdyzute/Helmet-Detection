@@ -33,21 +33,24 @@ Project_Folder/
 
 Follow the steps below to run the helmet detection web application.
 
-✅ Step 1: Clone the Project (Optional)
+---
+
+## ✅ Step 1: Clone the Project (Optional)
 
 If you are using Git:
 
-git clone https://github.com/hdyzute/Helmet-Detection
+```bash
+git clone https://github.com/YOUR_REPO/helmet-detection.git
 cd helmet-detection
 
-Or simply download the project folder.
 
-✅ Step 2: Install Python Dependencies
+##✅ Step 2: Install Python Dependencies
 
 Make sure you have Python 3.8+ installed.
 
 Then, open a terminal (or CMD) inside the project folder and run:
 
+```bash
 pip install -r requirements.txt
 
 
@@ -64,10 +67,11 @@ pillow
 numpy
 and other required packages.
 
-✅ Step 3: Add the Model File
+##✅ Step 3: Add the Model File
 
 Place your trained YOLOv8 model file:
 
+```bash
 best.pt
 
 
@@ -75,18 +79,20 @@ directly into the project folder root (same directory as app.py).
 
 If this file is missing, the application will not run.
 
-✅ Step 4: Launch the Web App
+##✅ Step 4: Launch the Web App
 
 Run this command:
 
+```bash
 streamlit run app.py
 
 
 After a few seconds, Streamlit will open the web app in your browser automatically (usually at):
 
+```bash
 http://localhost:8501
 
-✅ Step 5: Use the Application
+##✅ Step 5: Use the Application
 
 Inside the web interface:
 
@@ -102,7 +108,7 @@ Without Helmet
 
 You can test multiple images without restarting the app.
 
-📌 Notes
+##📌 Notes
 
 Make sure best.pt is placed in the correct directory.
 
@@ -110,13 +116,13 @@ The model can be replaced with any YOLOv8 model trained on a similar dataset.
 
 If you encounter GPU issues, YOLO will fall back to CPU mode automatically.
 
-🛠️ Training the Model (Optional)
+##🛠️ Training the Model (Optional)
 
 If you want to retrain the model using YOLOv8:
 
 yolo detect train data=data.yaml model=yolov8n.pt epochs=50 imgsz=640
 
-📜 License
+##📜 License
 
 This project is intended for educational and research purposes.
 Feel free to modify or extend it for your own applications.
