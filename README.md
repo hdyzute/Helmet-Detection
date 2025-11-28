@@ -1,5 +1,7 @@
 # ⛑️ Helmet Detection System using YOLOv8
 
+![Project Architecture](https://raw.githubusercontent.com/hdyzute/Helmet-Detection/refs/heads/main/demo.png)
+
 This project implements a helmet detection system using the **YOLOv8** object detection framework.  
 The system can detect and classify two categories:
 - **With Helmet**
